@@ -1,9 +1,12 @@
+import Home from "./page/Home"
+import Movie from "./page/Movie"
 
 function App() {
 
   return (
     <>
-      Hello World!
+      <Home/>
+      <Movie/>
     </>
   )
 }
