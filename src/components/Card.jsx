@@ -25,13 +25,13 @@ function Card({movie}) {
                 <Link to={"/movie/" + movie.id}>
                     <Item>
                         <Img
-                            src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`} 
+                            src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} 
                             alt="영화 포스트 사진"
                         />
                         <Overlay>
                             <Title>{movie.origin_title}</Title>
                             <SubTitle>{movie.release_date} / ⭐️ {movie.vote_average}</SubTitle>
-                            <Description>{movie.overview}</Description>
+                            <Description>{movie.overview.slice(0, 50) + "..."}</Description>
                         </Overlay>
                     </Item>
                 </Link>
